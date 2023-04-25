@@ -1,0 +1,8 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #F1F1F1;
+}

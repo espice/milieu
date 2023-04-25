@@ -1,5 +1,7 @@
+import Layout from '@/components/Layout';
 import useUser from '../../utils/hooks/useUser';
 import { signIn } from 'next-auth/react';
+import Landing from '@/modules/landing';
 
 export default function Main() {
   const { user } = useUser();
@@ -8,13 +10,9 @@ export default function Main() {
       {user ? (
         <h2>{user.name}</h2>
       ) : (
-        <button
-          onClick={() => {
-            signIn('google');
-          }}
-        >
-          sign deez nuts
-        </button>
+        <Layout>
+          <Landing />
+        </Layout>
       )}
     </>
   );
