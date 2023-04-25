@@ -4,4 +4,5 @@ body, html {
     font-family: Inter;
     width: 100vw;
     overflow-x: hidden;
+    background-color: #F1F1F1;
 }

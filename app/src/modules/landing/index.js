@@ -14,7 +14,7 @@ const Landing = () => {
     return (
         <div className={styles.landing}>
             <div className={styles.landing__hack}>
-                <div className={styles.landing__bg} />
+                <div className={styles.landing__bg} ></div>
                 <div className={styles.landing__chip}>
                     <span className={styles.landing__chip__read}>New: Fabripaint</span>
                     <button className={styles.landing__chip__button}>Read More
@@ -32,7 +32,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.landing__meet}>
+            <div className={styles.landing__meet} id="how">
                 <h2 className={styles.landing__meet__title}>Meet Hemp, the Better Cotton</h2>
                 <p className={styles.landing__meet__subtitle}>
                 All our clothes are made of Hemp, an organic fibre similar to cotton but with a plethora of other advantages.
@@ -89,11 +89,12 @@ const Landing = () => {
                 <div className={styles.landing__meet__features}>
                 <div className={styles.landing__meet__features__1} style={{width: '100%', }}>
                         <Needle className={styles.landing__meet__features__1__image} />
+                        <div className={styles.workers__bg}></div>
                         <h1 className={styles.landing__meet__features__1__title}>Supporting Regional Workers</h1>
                         <p className={styles.landing__meet__features__1__subtitle}>We hire regional workers to work on traditional regional wear such as Chikankari, Tie & Dye etc. This allows us to both, support regional workers as well as provide you with authentic regional wear. It also helps in reviving the slowly dying out handicrafts industry.</p>
                     </div>
                 </div>
-                <h2 style={{marginTop: '40px'}} className={styles.landing__meet__title}>Milieu Experiments - FabriPaints</h2>
+                <h2 style={{marginTop: '40px'}} className={styles.landing__meet__title} id="experiments">Milieu Experiments - FabriPaints</h2>
                 <p className={styles.landing__meet__subtitle}>
                 A new way of clothing, FabriPaints let you spray fabric directly from a can onto your body, creating a seamless T-Shirt of any colour and design within moments.
                 </p>
@@ -102,7 +103,7 @@ const Landing = () => {
                 </div>
                 <p className={styles.landing__meet__subtitle} style={{fontWeight: '600', fontSize: '14px', marginTop: '12px'}}>Available now for <Link href={"https://google.com"} style={{textDecoration: 'none', color: '#3963F8'}}>Pre Order</Link></p>
                 <h2 style={{marginTop: '45px'}} className={styles.landing__meet__title}>Contact Us</h2>
-                <div className={styles.landing__contact}>
+                <div className={styles.landing__contact} id="contact">
                 <div className={styles.landing__contact} >
                     <div className={styles.landing__contact__1} style={{width: '50%', background: '#DB6565'}}>
                         <div className={styles.image}>

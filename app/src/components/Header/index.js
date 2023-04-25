@@ -8,16 +8,13 @@ const Header = () => {
                 <h1 className={styles.header__title}>Milieu</h1>
             </Link>
                 <div className={styles.header__links}>
-                    <Link className={styles.header__links__link} href="https://google.com">
+                    <Link className={styles.header__links__link} href="#how">
                         <span>How</span>
                     </Link>
-                    <Link className={styles.header__links__link} href="https://google.com">
-                        <span>Why</span>
-                    </Link>
-                    <Link className={styles.header__links__link} href="https://google.com">
+                    <Link className={styles.header__links__link} href="#experiments">
                         <span>Experiments</span>
                     </Link>
-                    <Link className={styles.header__links__link} href="https://google.com">
+                    <Link className={styles.header__links__link} href="#contact">
                         <span>Contact</span>
                     </Link>
                 </div>
