@@ -5,7 +5,7 @@ const Layout = ({ children, imageURL, title, description }) => {
   return (
     <>
       <Head>
-        <title>Milieu kissing children</title>
+        <title>Milieu - For a sustainable world </title>
         <meta
           name="description"
           content={
