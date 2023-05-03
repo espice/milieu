@@ -1,0 +1,86 @@
+.section {
+    margin-top: 30px;
+    &__title {
+        margin: 0;
+        color: #173400;
+        font-family: 'Readex Pro';
+        font-size: 600;
+        font-size: 24px;
+    }
+    &__subtitle {
+        color: #909090;
+        font-weight: 600;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+
+.upcycle {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+
+.stuff {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    &__row {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        &__plus {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            border: 3px dashed #CBCBCB;
+            border-image: url("/border.png") 3 round;
+            justify-content: center;
+            gap: 8px;
+            &__title {
+                color: #909090;
+                font-weight: 600;
+                font-size: 22px;
+            }
+            &__plus {
+                height: 24px;
+                width: 24px;
+            }
+        }
+
+        &__item {
+            border: 3px solid #e3e3e3;
+            width: 50%;
+        
+            border-radius: 8px;
+            &__heading {
+                margin: 0;
+                color: #303030;
+                font-weight: 600;
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+            &__bottom {
+                display: flex;
+
+                &__status {
+                    color: #666666;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin: 0;
+                }
+                &__delivery {
+                    color: #666666;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-left: auto;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

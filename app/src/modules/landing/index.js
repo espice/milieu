@@ -9,6 +9,7 @@ import Donate from '../../../public/donate.svg';
 import Needle from '../../../public/needle.svg';
 import Twitter from "../../../public/twitter.svg";
 import Mail from "../../../public/mail.svg";
+import { signIn } from "next-auth/react";
 
 const Landing = () => {
     return (
@@ -27,7 +28,7 @@ const Landing = () => {
                     </h1>
                     <h2 className={styles.landing__title__subtitle}>Helping save the world, one cloth at a time</h2>
                     <div className={styles.landing__title__buttons}>
-                        <button className={styles.landing__title__buttons__button}>Shop Now</button>
+                        <button className={styles.landing__title__buttons__button} onClick={() => {signIn("google")}}>Shop Now</button>
                         <Link href="https://google.com" className={styles.landing__title__buttons__link}>Learn More</Link>
                     </div>
                 </div>

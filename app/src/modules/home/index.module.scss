@@ -1,0 +1,187 @@
+.home {
+    width: 70vw;
+    margin: 0 auto;
+
+    &__search {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        margin-top: 20px;
+        height: 44px;
+        &__input {
+            display: block;
+            width: 88%;
+            outline: none;
+            border-radius: 6px;
+            border: 1.5px solid #C7C7C7;
+            padding: 0px 10px;
+            color: #424242;
+            font-weight: 500;
+            &::placeholder {
+                color: #A8A8A8;
+            }
+        }
+
+        &__button {
+            width: 12%;
+            border-radius: 6px;
+            background-color: rgba(0, 165, 96, 0.15);
+            border: 2px solid rgba(128, 169, 114, 0.3);
+            color: #383838;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+    &__chip {
+        margin-top: 20px;
+        background-image: url('/chip.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius:6px;
+        padding: 15px 30px;
+
+        &__heading {
+            margin: 0;
+            font-family: 'Readex Pro';
+            font-size: 32px;
+        }
+
+        &__subheading {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: #404040;
+            font-family: 'Readex Pro';
+        }
+
+        &__button {
+            border: none;
+            width: 220px;
+            margin-top: 20px;
+            height: 34px;
+            border-radius: 4px;
+            color: white;
+            font-weight: 700;
+            font-family: 'Readex Pro';
+            font-size: 12px;
+            margin-bottom: 10px;
+            background-color: rgba(19, 134, 0, 0.56);
+        }
+    }
+
+    
+}
+
+
+.section {
+    margin-top: 25px;
+    &__title {
+        margin: 0;
+        color: #173400;
+        font-size: 600;
+        font-size: 20px;
+    }
+}
+
+
+.shop {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+    &__item {
+        width: 220px;
+        &__main {
+            border-radius: 6px;
+            background-color: rgb(219,219,219);
+            padding-top: 10px;
+            &__top {
+                display: flex;
+                width: 100%;
+           
+                align-items: center;
+                &__off {
+                    color: #138600;
+                    font-weight:700;
+                    font-size: 11px;
+                    margin-left: 10px;
+                }
+
+                &__heart {
+                    display: block;
+                    margin-right: 10px;
+                    margin-left: auto;
+                }
+
+            }
+
+            &__image {
+                height: 250px;
+                width: auto;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        &__stats {
+            display: flex;
+            margin-top: 12px;
+            &__text {
+                &__heading {
+                    color: #646464;
+                    font-weight: 500;
+                    font-size: 12px;
+                    margin-bottom: 8px;
+                    margin-top: 0px;
+                }
+
+                &__price {
+                    color: #363636;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin: 0;
+                }
+            }
+        }
+
+        &__plus {
+            border: none;
+            background-color: #CDE5C4;
+            width: 36px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 36px;
+        }
+    }
+}
+
+
+.categories {
+    display: flex;
+        gap: 12px;
+    &__category {
+        background-color: rgba(171, 206, 159, 0.26);
+        width: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        padding: 10px 0px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        &__image {
+            height: 100px;
+            width: auto;
+        }
+
+        &__heading {
+            margin: 0;
+            color: #083C00;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Readex Pro';
+        }
+    }
+}
