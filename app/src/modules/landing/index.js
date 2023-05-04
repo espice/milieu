@@ -51,7 +51,7 @@ const Landing = () => {
                 <p className={styles.landing__meet__subtitle}>
                 We also use other fabrics such as Bamboo Linen, Cork and Recycled Polyester all of which have a much lower impact on the environment than their counterparts and do not hurt animals.
                 </p>
-                <h2 className={styles.landing__meet__title} style={{fontSize: '25px', marginTop: '45px', marginBottom: '0px'}}>...that's not all</h2>
+                <h2 className={styles.landing__meet__title} style={{fontSize: '25px', marginTop: '45px', marginBottom: '0px'}}>...that{"'"}s not all</h2>
                 <p className={styles.landing__meet__subtitle} style={{marginTop: '10px'}}>
                 Our clothes are stitched and shipped in a way to make the process as sustainable as possible.
                 </p>

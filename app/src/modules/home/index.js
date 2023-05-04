@@ -17,7 +17,7 @@ const Home = () => {
                 <h2 className={styles.home__chip__subheading}>For as long as we can remember, the way clothes work hasn’t really evolved.
                 <br/>
                 We’re here to change that.</h2>
-                <button className={styles.home__chip__button}>See what we've been up to</button>
+                <button className={styles.home__chip__button}>See what we{"'"}ve been up to</button>
             </div>
             <div className={styles.section}>
                 <h1 className={styles.section__title}>Trending Today</h1>
