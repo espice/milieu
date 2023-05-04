@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import HeartSvg from "../../../public/heart.svg";
 import Image from "next/image"
 import PlusSvg from "../../../public/plus.svg";
+import Link from "next/link";
 
 const Home = () => {
     const [search, setSearch] = useState("");
@@ -23,24 +24,26 @@ const Home = () => {
                 <h1 className={styles.section__title}>Trending Today</h1>
             </div>
             <div className={styles.shop}>
-                <div className={styles.shop__item}>
-                    <div className={styles.shop__item__main}>
-                        <div className={styles.shop__item__main__top}>
-                            <span className={styles.shop__item__main__top__off}>-10% CO2</span>
-                            <HeartSvg className={styles.shop__item__main__top__heart}/>
+                <Link href={"/cloth/unisex-gray-tshirt"}>
+                    <div className={styles.shop__item}>
+                        <div className={styles.shop__item__main}>
+                            <div className={styles.shop__item__main__top}>
+                                <span className={styles.shop__item__main__top__off}>-10% CO2</span>
+                                <HeartSvg className={styles.shop__item__main__top__heart}/>
+                            </div>
+                            <img className={styles.shop__item__main__image} src={"/tshirt.png"} />
                         </div>
-                        <img className={styles.shop__item__main__image} src={"/tshirt.png"} />
-                    </div>
-                    <div className={styles.shop__item__stats}>
-                        <div className={styles.shop__item__stats__text}>
-                            <h3 className={styles.shop__item__stats__text__heading}>Grey Black Unisex T-Shirt (Hemp)</h3>
-                            <h3 className={styles.shop__item__stats__text__price}>$1.99</h3>
+                        <div className={styles.shop__item__stats}>
+                            <div className={styles.shop__item__stats__text}>
+                                <h3 className={styles.shop__item__stats__text__heading}>Grey Black Unisex T-Shirt (Hemp)</h3>
+                                <h3 className={styles.shop__item__stats__text__price}>$1.99</h3>
+                            </div>
+                            <button className={styles.shop__item__plus}>
+                                <PlusSvg/>
+                            </button>
                         </div>
-                        <button className={styles.shop__item__plus}>
-                            <PlusSvg/>
-                        </button>
                     </div>
-                </div>
+                </Link>
                 <div className={styles.shop__item}>
                     <div className={styles.shop__item__main}>
                         <div className={styles.shop__item__main__top}>
